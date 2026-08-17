@@ -1,0 +1,58 @@
+package collection.example.list;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // wrapper class
+//        int a=10;int b=-10;
+//        int c=null; it cannot be done
+//        Integer d=new Integer(null);
+
+        // declaring list
+        List<Integer> list1 = new ArrayList<>(); //{10,-12,0,null,23,39,-33}
+
+        // to store multiple kind of data in single list
+//        List<?> list2 = new ArrayList<>();  //{10,null,0,-34,"Hi",'t',false,4.56,5.67f}
+//        List<Object> list3 = new ArrayList<>();  //{10,null,0,-34,"Hi",'t',false,4.56,5.67f}
+
+        //add data
+        list1.add(12);
+        list1.add(56);
+        list1.add(90);
+        list1.add(40);
+        list1.add(12);
+        //list1.add(null);
+        list1.add(89);
+        //list1.add(null);
+        list1.add(12);
+
+        System.out.println("list1 is :"+list1);
+
+        //remove data
+        list1.remove(2);
+        System.out.println("list1 after removing 2nd index data is : "+list1);
+
+        //size
+        System.out.println("length of list1 is : "+list1.size());
+
+        //search
+        System.out.println("list1 3rd index element is : "+list1.get(3));
+        System.out.println("list1 5th index element is : "+list1.get(5));
+
+        //sort
+        Collections.sort(list1);// sort in ascending order
+        System.out.println("list1 in ascending order : "+list1);
+        Collections.sort(list1, Collections.reverseOrder());// sort in descending order
+        System.out.println("list1 in descending order : "+list1);
+
+        //traverse
+        System.out.println("list1 traversing using foreach loop");
+        for(Integer l1 : list1){
+            System.out.println(l1);
+        }
+    }
+}
