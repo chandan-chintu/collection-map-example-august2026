@@ -6,10 +6,8 @@ import java.util.List;
 
 public class LinkedListExample {
     public static void main(String[] args) {
-
         // declaring list
         List<Integer> list1 = new LinkedList<>(); //{10,-12,0,null,23,39,-33}
-
         // to store multiple kind of data in single list
 //        List<?> list2 = new ArrayList<>();  //{10,null,0,-34,"Hi",'t',false,4.56,5.67f}
 //        List<Object> list3 = new ArrayList<>();  //{10,null,0,-34,"Hi",'t',false,4.56,5.67f}
@@ -50,4 +48,5 @@ public class LinkedListExample {
             System.out.println(l1);
         }
     }
+    // added some lines
 }
